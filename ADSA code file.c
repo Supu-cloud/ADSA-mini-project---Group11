@@ -109,7 +109,7 @@ void disk_free_block(Disk *d, int id)
         d->blocks[id] = NULL;
     }
 }
-/*
+
 BTreeNode *btree_create_node(int leaf)
 {
     BTreeNode *n = malloc(sizeof(*n));
@@ -508,7 +508,7 @@ void fs_init(Btrfs *fs)
         fs->block_meta[i].allocated = 0;
         fs->block_meta[i].ref_count = 0;
     }
-}*/
+}
 //Block allocation
 static int fs_allocate_block(Btrfs *fs)
 {
